@@ -1,0 +1,117 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Home</title>
+
+<!--<link href="http://www.dragonpjb.com/data-loom/favicon.ico" rel="icon" type="image/x-icon" />-->
+<link rel="stylesheet" type="text/css" href="main.css" />
+
+<script type="text/javascript">
+	img1= new Image();		/*  <!-- <~~   new one for every image  -->*/
+	img1.src="gallery/aru-1.png";	
+	img2= new Image();
+	img2.src="gallery/aru-2.png";
+	img3= new Image();
+	img3.src="gallery/aru-3.png";
+	img4= new Image();
+	img4.src="gallery/aru-4.png";
+	img5= new Image();
+	img5.src="gallery/aru-5.png";
+	img6= new Image();
+	img6.src="gallery/aru-6.png";
+	img7= new Image();
+	img7.src="gallery/aru-7.png";
+	img8= new Image();
+	img8.src="gallery/aru-8.png";
+	img9= new Image();
+	img9.src="gallery/aru-9.png";
+	
+	var myTxt = new Array(6);	
+		myTxt[0]="This is supposed to be a site to sell sporting goods. It is built entirely in flash. except the photography I did all the art work my self.";
+		myTxt[1]="This is the about page.";
+		myTxt[2]="This page shows videos about sports related subjects. The videos came from youtube except for the one about knots which I shot myself.";
+		myTxt[3]="This page shows articles about sports related subjects.";
+		myTxt[4]="Here we Talk about the different parts of an anvil and what they are for.";
+		myTxt[5]="This is the catalog. IT shows what products the 'store' sell and allows you to ad dthings to the cart ";
+		myTxt[6]="This is the image I used for the cover 2. ";
+		myTxt[7]="This is the image I used for the cover 3. ";
+		myTxt[8]="This is the image I used for the cover 4. ";
+	function swap(x,y,w)
+	{
+	y.src = x;
+	var z = document.getElementById('decript');
+	z.firstChild.nodeValue = myTxt[w];
+	}
+</script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div id="nav_main">
+				<ul id="nav_main_lst">
+					<li id="home_btn" title="Home"><a href="index.php"><img src="images/home-3.png" alt="home page button"/></a></li>
+					<li id="gallery_btn" title="Gallery"><a href="gallery.php"><img src="images/gallery-3.png" alt="gallery page button"/></a></li>
+					<li id="resume_btn" title="Resume"><a href="resume.php"><img src="images/resume-3.png" alt="resume page button"/></a></li>
+					<li id="contact_btn" title="Contact Me"><a href="contact.php"><img src="images/mail-3.png" alt="contact me page button"/></a></li>
+				</ul>
+				<ul id="nav_main_label">
+					<li id="home_li">Home</li>
+					<li id="gallery_li">Gallery</li>
+					<li id="resume_li">Resume</li>
+					<li id="contact_li">Contact Me</li>
+				</ul>
+			</div><!--nav_main-->
+			<div id="branding">
+				<p id="logo"><img src="images/logo.png" alt="Data Loom logo"/></p>
+			</div><!--branding-->
+		</div><!--header-->
+		
+		<div id="content_main">
+		
+			<div id="content_left">
+				<h1>KnifeFinder.net</h1>
+				<div id="medium_pict">
+					<p><img src="gallery/aru-1.png" alt="knife finder home page" name="medImg"/></p>
+				</div><!--medium_pict-->
+			</div><!--content_left-->
+				
+			<div id="content_right" >
+				
+				
+				<div class="related_picts">
+					<div class="tab">
+						<p class="tab"><img src="images/title-back-2.png" alt=""/></p>
+						<h2 class="related_picts tab">Related Images</h2>
+					</div>
+					<div id="thumb_wraper">
+						<p class="related_picts"><a href="#"><img class="related_picts" src="gallery/aru-1-sm.png" alt="knife finder thumbnail 1" onmousedown="swap(img1.src,medImg,0)"/></a></p>
+						<p class="related_picts"><a href="#"><img class="related_picts" src="gallery/aru-2-sm.png" alt="knife finder thumbnail 2" onmousedown="swap(img2.src,medImg,1)"/></a></p>
+						<p class="related_picts"><a href="#"><img class="related_picts" src="gallery/aru-3-sm.png" alt="knife finder thumbnail 3" onmousedown="swap(img3.src,medImg,2)"/></a></p>
+						<p class="related_picts"><a href="#"><img class="related_picts" src="gallery/aru-4-sm.png" alt="knife finder thumbnail 4" onmousedown="swap(img4.src,medImg,3)"/></a></p>
+						<p class="related_picts"><a href="#"><img class="related_picts" src="gallery/aru-5-sm.png" alt="knife finder thumbnail 5" onmousedown="swap(img5.src,medImg,4)"/></a></p>
+						<p class="related_picts"><a href="#"><img class="related_picts" src="gallery/aru-6-sm.png" alt="knife finder thumbnail 6" onmousedown="swap(img6.src,medImg,5)"/></a></p>
+						<p class="related_picts"><a href="#"><img class="related_picts" src="gallery/aru-7-sm.png" alt="knife finder thumbnail 6" onmousedown="swap(img7.src,medImg,6)"/></a></p>
+						<p class="related_picts"><a href="#"><img class="related_picts" src="gallery/aru-8-sm.png" alt="knife finder thumbnail 6" onmousedown="swap(img8.src,medImg,7)"/></a></p>
+						<p class="related_picts"><a href="#"><img class="related_picts" src="gallery/aru-9-sm.png" alt="knife finder thumbnail 6" onmousedown="swap(img9.src,medImg,8)"/></a></p>
+					</div>
+				</div><!--related_picts-->
+			</div><!--content_right-->
+			<div class="project_decription">
+				<div class="tab">
+				<p class="tab"><img src="images/title-back-2.png" alt=""/></p>
+				<h2 class="project_decription tab">Description</h2>
+				</div>
+				<p class="project_decription" id="decript">This is supposed to be a site to sell sporting goods. It is built entirely in flash. except the photography I did all the art work my self."</p>
+			</div>
+		</div><!--content_main-->
+		
+		<div id="site_info">
+		<address>
+			Data Loom Interactive, Inc.Copyright&copy; 2012 Updated: 9/22/2012
+		</address>
+		</div><!--site_info-->
+	</div><!--wrapper-->
+</body>
+</html>
