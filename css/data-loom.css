@@ -1,5 +1,5 @@
 body {
-    background: url("images/carbon-gradient-1.png") left top, url("images/carbon-pattern-1.png") left top;
+    background: url("../images/carbon-gradient-1.png") left top, url("../images/carbon-pattern-1.png") left top;
     background-size: 100%, auto;
 
     font-family: Trebuchet MS, Arial, sans-serif;
