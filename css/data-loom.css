@@ -12,6 +12,8 @@ h1, h2, h3, h4 {
     font-family: BankGothic LT BT, Arial, sans-serif;
 }
 
+
+
 .h-list {
 	padding: 0;
 }
@@ -24,6 +26,15 @@ h1, h2, h3, h4 {
 
 .h-list li:last-child {
 	margin: 0;
+}
+
+.circle {
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+h1.logo {
+	max-width: 369px;
 }
 
 .logo {
@@ -49,7 +60,7 @@ h1, h2, h3, h4 {
 }
 
 footer {
-
+	color: #5473bb;
 }
 
 nav ul li {
@@ -90,8 +101,18 @@ nav ul li {
 	width: 100%;
 }
 
+#profile h2 {
+	text-align: center;
+	margin: 10px 0 20px;
+}
+
 .profile-pict {
 	text-align: center;
+	width: 200px;
+}
+
+p.profile-pict {
+	margin: 0 auto;
 }
 
 .profile-pict img {
