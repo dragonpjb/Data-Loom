@@ -163,6 +163,10 @@ p.profile-pict {
 	list-style-type: none;
 }
 
+.thumb {
+	float: left;
+}
+
 @media only screen and (min-width:326px) {
 
 	h1.logo-full {
