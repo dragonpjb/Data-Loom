@@ -60,6 +60,7 @@ h1.logo-full {
 ***************************************************************************************************/
 
 body {
+	min-width: 300px;
 	margin: 0;
 	
 	font-family: Trebuchet MS, Arial, sans-serif;
@@ -67,10 +68,6 @@ body {
     background: url("../images/carbon-gradient-1.png") left top repeat-y, url("../images/carbon-pattern-1.png") left top;
     background-size: 100%, auto;
 }
-
-
-
-
 
 .page-header {
 	margin-bottom: 20px;
@@ -113,7 +110,6 @@ nav ul li {
 #nav-main ul li {
 	width: 54px;
 	margin-right: 10px;
-	
 }
 
 #nav-main ul li:last-child {
@@ -168,6 +164,13 @@ p.profile-pict {
 }
 
 @media only screen and (min-width:326px) {
-	
+
+	h1.logo-full {
+		min-height: 70px;
+	}
+
+	#nav-main ul li {
+		width: auto;
+	}
 }
 
