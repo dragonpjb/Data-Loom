@@ -1,18 +1,27 @@
-body {
-	margin: 0;
-	
-    background: url("../images/carbon-gradient-1.png") left top repeat-y, url("../images/carbon-pattern-1.png") left top;
-    background-size: 100%, auto;
+/***************************************************************************************************
+                                          RESET CLASSES
+***************************************************************************************************/
 
-    font-family: Trebuchet MS, Arial, sans-serif;
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
 }
 
 h1, h2, h3, h4 {
 	/*color: #5473bb;*/
     font-family: BankGothic LT BT, Arial, sans-serif;
 }
-
-
 
 .h-list {
 	padding: 0;
@@ -33,17 +42,35 @@ h1, h2, h3, h4 {
 	overflow: hidden;
 }
 
-h1.logo {
-	max-width: 369px;
-}
-
-.logo {
+.logo-full {
 	background: url(../images/logo-full.png) center center;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	display: block;
 	text-indent: -9999px;	
 }
+
+
+
+
+/***************************************************************************************************
+
+***************************************************************************************************/
+
+body {
+	margin: 0;
+	
+	font-family: Trebuchet MS, Arial, sans-serif;
+	
+    background: url("../images/carbon-gradient-1.png") left top repeat-y, url("../images/carbon-pattern-1.png") left top;
+    background-size: 100%, auto;
+}
+
+h1.logo {
+	max-width: 369px;
+}
+
+
 
 .page-header {
 	margin-bottom: 20px;
