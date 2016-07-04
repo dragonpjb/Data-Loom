@@ -7,6 +7,13 @@
 	padding: 0;
 }
 
+p {
+	margin: 16px 0;
+}
+
+ul {
+	margin: 16px 0;
+}
 
 .clearfix:before,
 .clearfix:after {
@@ -27,10 +34,14 @@ h1, h2, h3, h4 {
 	padding: 0;
 }
 
-.h-list li{
+.h-list li {
 	display: inline-block;
 	margin-right: 10px;
 	list-style-type: none;
+}
+
+.h-list img {
+	width: 100%;
 }
 
 .h-list li:last-child {
@@ -167,7 +178,24 @@ p.profile-pict {
 	float: left;
 }
 
+.page-footer .h-list {
+	width: 100%;
+	margin: 16px auto;
+	text-align: center;
+}
+
 @media only screen and (min-width:326px) {
+
+	h1.logo-full {
+		min-height: 70px;
+	}
+
+	#nav-main ul li {
+		width: auto;
+	}
+}
+
+@media only screen and (min-width:800px) {
 
 	h1.logo-full {
 		min-height: 70px;
