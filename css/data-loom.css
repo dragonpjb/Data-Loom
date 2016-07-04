@@ -38,7 +38,7 @@ h1.logo {
 }
 
 .logo {
-	background: url(../images/logo.png) center center;
+	background: url(../images/logo-full.png) center center;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	display: block;
