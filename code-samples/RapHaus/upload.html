@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Common Edits - Landing Page</title>
+    
+    <meta id="meta" name="viewport" content="width=device-width; initial-scale=1.0" />
+    <meta name="keywords" content="Hip Hop Beat Contest">
+	<meta name="description" content="Hip Hop Beat Contest">
+    
+    <link href="css/main.css" rel="stylesheet"/>
+    
+    <!-- This lets the not standard fonts work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+    <script src="js/rap-haus.js"></script>
+</head>
+
+<body class="upload-pg">
+	<div id="wrapper-main" class="clearfix">
+		<div id="content" class="clearfix">
+			<div class="wrapper-picture logo-bg">
+				<img src="images/rap-house-logo-lg.png" alt="Rap.Haus" />
+			</div>
+			
+			<h1>SXSW <span class="hide-when-big">2016</span> Hip&nbsp;Hop&nbsp;Contest</h1>
+			
+			<div class="upload-link clearfix">
+				
+				<p>
+					<a href="javascript:void(0);">Click to upload or submit a link below</a>
+				</p>
+				<div></div>
+			</div>
+			
+			<form id="load-track-form" method="POST">
+				<fieldset>
+					<h2>Submit a Soundcloud, Youtube, or Dropbox Link</h2>
+					
+					<p class="wrapper-input">
+						<label for="email">Email</label><br>
+						<input id="email" name="email" type="email">
+					</p>
+					
+					<p class="wrapper-input">
+						<label for="name">Artist Name *</label>
+						<input id="name" name="name" type="text">
+					</p>
+					
+					<p class="wrapper-input">
+						<label for="link">Link to Hip Hop Beat or Track *</label>
+						<input id="link" name="link" type="text">
+					</p>
+					
+					<fieldset class="option-list">
+						<legend>Contest License Selection *</legend>
+						
+						<div>
+							<input type="checkbox" id="license-1" name="license-1" value="cca" checked /> 
+							<label for="license-1">Creative Commons Attribution 4.0 (Free)</label>
+						</div>
+						
+						<div>
+							<input type="checkbox" id="license-2" name="license-2" value="ascap" />
+							<label for="license-2">ASCAP Registration with mechanical royalties ($5)</label>
+						</div>
+					</fieldset>
+					
+					<button type="submit">REGISTER</button>
+				</fieldset>
+			</form>
+			
+			<div class="wrapper-picture logo-sm">
+				<img src="images/rap-house-logo-sm.png" alt="Rap.Haus" />
+			</div>
+		</div>
+	</div>
+</body>
+</html>
