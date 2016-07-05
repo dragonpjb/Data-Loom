@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Common Edits - Landing Page</title>
+    
+    <meta id="meta" name="viewport" content="width=device-width; initial-scale=1.0" />
+    <meta name="keywords" content="Hip Hop Beat Contest">
+	<meta name="description" content="Hip Hop Beat Contest">
+    
+    <link href="css/main.css" rel="stylesheet"/>
+    
+    <!-- This lets the not standard fonts work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+	<script src="js/rap-haus.js"></script>
+</head>
+
+<body class="uploads">
+<div id="wrapper-main" class="clearfix">
+	
+		<div id="header">
+			<div class="branding">
+				<img src="img/CommonEdits-logo-white.png" alt="common edits logo in white" />
+			</div>
+			
+			<h1>Rap Contest</h1>
+		</div>
+	<div class="shuffle-left">
+		<!-- Upload -->
+		<div class="section">		
+			<div id="submission_form">
+				<div id="submission_form_errors"></div>
+				
+				<h2>My Submission</h2>
+				
+				<form action="upload.php" onsubmit="return validate();" method="post" enctype="multipart/form-data">
+					<div class="wraper-input">
+						<!--<label for="email">Email</label><br/>-->
+						<input type='text' name='email' id='email' placeholder="You@email.com" />
+					</div>		
+					
+					<div class="wraper-input">  
+						<input type="file" name="mp3_submission" id="file_upload" /><br/>
+					</div>
+					
+				    <button type="submit" name="upload_submission" id="upload_submission">Upload My Submission</button>
+				</form>
+			</div>
+			
+			<div id="submission_form_loading" style="display: none">
+				<img src="img/loading.gif">
+			</div>
+		</div>
+	
+		<!-- Lyric Generator -->
+		<div id="generator" class="section">
+			<h2>Lyric Generator</h2>
+			
+			<div>
+				<div class="wraper-input">
+					<textarea style="height:100px" id="lyric_generator_textarea"></textarea><br/>
+				</div>
+				
+				<button type="button" id="lyric_generator_button">Generate Rap Lyrics</button>
+			</div>
+		</div>
+	</div>
+	<div class="shuffle-right">
+		<!-- Beats -->
+		<div id="beats" class="section ">
+			<h2>Beats</h2>
+			
+			<div>
+				<div class='beat'> 
+					<span>Beat1</span><br />
+					
+					<audio controls preload='none'>
+						<source src='mp3/01_20160604/C-Dray_Beats_-_Here_We_Go_Again.mp3'>
+					</audio>
+					
+					<span>
+						<a href='mp3/01_20160604/C-Dray_Beats_-_Here_We_Go_Again.mp3'>
+							<img src="img/download-btn.png" alt="download" />
+						</a>
+					</span>
+				</div>
+				
+				<div class='beat'> 
+					<span>
+						Beat2
+					</span><br />
+					
+					<audio controls preload='none'>
+						<source src='mp3/01_20160604/Decktonic_-_13_-_Night_Drive_Strong_Suit_Remix.mp3'>
+					</audio>
+					
+					<span>
+						<a href='mp3/01_20160604/Decktonic_-_13_-_Night_Drive_Strong_Suit_Remix.mp3'>
+							<img src="img/download-btn.png" alt="download" />
+						</a>
+					</span>
+				</div>
+				
+				<div class='beat'> 
+					<span>
+						Beat3
+					</span><br />
+					
+					<audio controls preload='none'>
+						<source src='mp3/01_20160604/DFBEATS_MGJBEATS.mp3'>
+					</audio>
+					
+					<span>
+						<a href='mp3/01_20160604/DFBEATS_MGJBEATS.mp3'>
+							<img src="img/download-btn.png" alt="download" />
+						</a>
+					</span>
+				</div>
+				
+				<div class='beat'> 
+					<span>Beat4</span><br />
+					
+					<audio controls preload='none'>
+						<source src='mp3/01_20160604/EmbersandAshes.mp3'>
+					</audio>
+					
+					<span>
+						<a href='mp3/01_20160604/EmbersandAshes.mp3'>
+							<img src="img/download-btn.png" alt="download" />
+						</a>
+					</span>
+				</div>
+				
+				<div class='beat'> 
+					<span>
+						Beat5
+					</span><br />
+					
+					<audio controls preload='none'>
+						<source src='mp3/01_20160604/FiFtY_VinC_-_The_Show_Must_Go_On_1.mp3'>
+					</audio>
+					
+					<span>
+						<a href='mp3/01_20160604/FiFtY_VinC_-_The_Show_Must_Go_On_1.mp3'>
+							<img src="img/download-btn.png" alt="download" />
+						</a>
+					</span>
+				</div>
+			</div>
+		</div>
+	
+		<!-- Validation -->
+		<div>
+			As seen on . . 
+		</div>
+	</div>
+</div>
+</body>
+
+<!-- load scripts last --> 
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="js/lyric_generator.js"></script>
+<script>
+// When the user clicks "Upload my Submission"...
+function validate(){
+	valid = true;
+	errors = [];
+
+	// Validate Music File
+	file_name = document.getElementById('file_upload').value.toLowerCase();
+	if(!file_name){
+		errors.push("Forgot to upload MP3")
+ 		valid = false;
+	}else{
+		if(file_name.indexOf(".mp3") != file_name.length - 4) {
+			// File is not .mp3
+	 		errors.push("File is not .mp3")
+	 		valid = false;
+		}
+	}
+
+	// Validate Email 
+	email = "";
+	if(!email) email = document.getElementById('email').value;
+	if(!email){ 
+		errors.push("Forgot to put email")
+		valid = false; 
+	}
+
+	if(valid){
+		// Everything looks good. Start the submission. . .
+		$("#submission_form_loading").show();
+		$("#submission_form").hide()
+		return true;
+	}else{
+		// There were some errors
+		$("#submission_form_errors").empty();
+		for(i in errors){
+			$("#submission_form_errors").append("<div class='error_message'>"+errors[i]+"</div>");
+		}
+		return false;
+	}
+}
+</script>
+
+</html>
