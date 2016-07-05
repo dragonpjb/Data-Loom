@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta id="meta" name="viewport" content="width=device-width; initial-scale=1.0" />
+    
+    <title>An AngularJS Image Gallery With Comments</title>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    
+    <script src="js/angular.min.js"></script>
+</head>
+
+<body ng-app="imageGallery">
+<div id="wrapper-main">
+	<header>
+		<h1>Headline</h1>
+
+		<nav id="nav-main">
+			<ul>
+				<li>
+					<a href="javascript:void(0);">#</a>
+				</li>
+
+				<li>
+					<a href="javascript:void(0);">#</a>
+				</li>
+        
+				<li>
+					<a href="javascript:void(0);">#</a>
+				</li>
+
+				<li>
+					<a href="javascript:void(0);">#</a>
+				</li>
+			</ul>
+		</nav>
+    </header>
+
+    <section id="" ng-controller="GalleryController as gallery">
+	    <h2>Image Title</h2> 
+	    
+	    <div id='main-image'>
+			<img src='http://i.imgur.com/owVfTZK.png' alt='main gallery image' />
+	    </div> <!-- end of main-image -->
+	    
+	    <div ng-repeat='group in gallery.pictures'>
+	    	<div ng-repeat='entry in group.entries'>
+		        <p>{{entry.title}}</p>
+		        <p>{{entry.description}}</p>
+		        <p>{{entry.source}}</p>
+		        <p>{{entry.author}}</p>
+		        <p>{{entry.authorSite}}</p>
+		        <p>images.thumb: {{entry.images.thumb}}</p>
+		        <p>images.medWide: {{entry.images.medWide}}</p>
+		        <p>images.medSquare: {{entry.images.medSquare}}</p>
+		        <p>images.full: {{entry.images.full}}</p>
+		        <p>--------------------------------------------------------------------------------------------------</p>
+			</div>
+			<p>===================================================================================================</p>
+	    </div>
+    </section>
+
+    <footer>
+      <address>Data Loom Interactive, Copyright&copy; 2016 Updated: 6/**/2016</address>
+    </footer>
+</div>
+</body>
+</html>
