@@ -134,15 +134,26 @@ nav ul li {
 }
 
 #profile {
+	box-sizing: border-box;
 	width: 100%;
 	margin: 0 auto;
-	max-width: 500px;
-	text-align: justify;
+	
+	
+}
+
+#profile header{
+	text-align: center;
 }
 
 #profile h2 {
-	text-align: center;
+	
 	margin: 10px 0 20px;
+}
+
+#profile .content-main p{
+	text-align: justify;
+	max-width: 500px;
+	margin: 0 auto;
 }
 
 .profile-pict {
@@ -219,6 +230,27 @@ p.profile-pict {
 		width: 369px;
 		margin: 22px 0;
 	
+	}
+	
+	#profile {
+		
+	}
+	
+	#profile header, #profile .content-main {
+		box-sizing: border-box;
+	}
+	
+	#profile header {
+		float: left;
+		padding-left: 20px;
+	}
+	
+	#profile .content-main {
+		float: right;
+		padding-right: 20px;
+		
+		text-align: right;
+		
 	}
 	
 	.page-footer address {
