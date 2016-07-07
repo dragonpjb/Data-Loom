@@ -150,10 +150,14 @@ nav ul li {
 	margin: 10px 0 20px;
 }
 
-#profile .content-main p{
-	text-align: justify;
+#profile .content-main p {
+	
+	
 	max-width: 500px;
-	margin: 0 auto;
+	margin: 0 auto 15px;
+	
+	text-align: justify;
+	text-indent: 2em;
 }
 
 .profile-pict {
@@ -242,11 +246,19 @@ p.profile-pict {
 	
 	#profile header {
 		float: left;
+		padding-top: 44px;
 		padding-left: 20px;
+		width: 44%
+	}
+	
+	#profile header h2 {
+		margin-bottom: 0;
 	}
 	
 	#profile .content-main {
 		float: right;
+		width: 56%;
+	
 		padding-right: 20px;
 		
 		text-align: right;
