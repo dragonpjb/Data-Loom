@@ -75,9 +75,10 @@ body {
 	margin: 0;
 	
 	font-family: Trebuchet MS, Arial, sans-serif;
+	background: url("../images/diagmonds.png");
 	
-    background: url("../images/carbon-gradient-1.png") left top repeat-y, url("../images/carbon-pattern-1.png") left top;
-    background-size: 100%, auto;
+    /*background: url("../images/carbon-gradient-1.png") left top repeat-y, url("../images/carbon-pattern-1.png") left top;
+    background-size: 100%, auto;*/
 }
 
 .page-header {
