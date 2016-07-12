@@ -162,8 +162,7 @@ nav ul li {
 	max-width: 500px;
 	margin: 0 auto 15px;
 	
-	text-align: justify;
-	text-indent: 2em;
+	text-align: center;
 }
 
 .profile-pict {
@@ -272,6 +271,20 @@ nav ul li {
 		text-align: right;
 		
 	}
+	
+	#profile .content-main p {
+		
+		margin-top: 126px;
+		text-align: left;
+		font-size: 1.1em;
+	}
+	
+	max-width: 500px;
+	margin: 0 auto 15px;
+	
+	text-align: center;
+	text-indent: 2em;
+}
 	
 	.page-footer address {
 		float: left;
