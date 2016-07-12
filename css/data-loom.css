@@ -79,6 +79,7 @@ body {
 	margin: 0;
 	
 	font-family: Trebuchet MS, Arial, sans-serif;
+	font-size: 1em;
 	background: url("../images/escheresque_ste.png");
 	
     /*background: url("../images/carbon-gradient-1.png") left top repeat-y, url("../images/carbon-pattern-1.png") left top;
@@ -166,12 +167,10 @@ nav ul li {
 }
 
 .profile-pict {
-	text-align: center;
-	width: 200px;
-}
-
-p.profile-pict {
+	width: 132px;
 	margin: 0 auto;
+	
+	text-align: center;
 }
 
 .profile-pict img {
@@ -221,6 +220,10 @@ p.profile-pict {
 
 	#nav-main ul li {
 		width: auto;
+	}
+	
+	.profile-pict {
+		width: 200px;
 	}
 }
 
