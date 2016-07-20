@@ -87,6 +87,7 @@ body {
 	margin: 0;
 	
 	font-family: Trebuchet MS, Arial, sans-serif;
+	color: #FFFFFF;
 	font-size: 1em;
 	background: url("../images/escheresque_ste.png");
 	
@@ -117,6 +118,7 @@ nav ul li {
 	text-decoration: none;
 }
 
+/*
 #wrapper {
 	box-sizing: border-box;
 	max-width: 1000px;
@@ -124,15 +126,22 @@ nav ul li {
     padding: 0 20px;
     width: 100%;
     min-width: 300px;
-    color: #FFFFFF; /* #5473BB; */
+    color: #FFFFFF; 
 }
+*/
 
 .wrapper-page {
 	
 }
 
 .wrapper-content {
+	box-sizing: border-box;
 	max-width: 1000px;
+	margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    min-width: 300px;
+    color: #FFFFFF; /* #5473BB; */
 }
 
 #nav-main ul {
@@ -302,16 +311,18 @@ nav ul li {
 	}
 	
 	.project {
-		max-width: 800px;
+		width: 100%;
 	}
 	
 	.splash {
 		padding: 50px 0;
 		
+		
 	}
 	
 	.splash .hero-image {
 		float: left;	
+		width: 45%;
 	}
 	
 	.splash .description {
@@ -325,6 +336,7 @@ nav ul li {
 	
 	.gallery .display {
 		float: left;
+		width: 45%;
 	}
 	
 	.gallery .description {
