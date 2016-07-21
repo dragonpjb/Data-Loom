@@ -17,6 +17,7 @@ ul {
 
 a {
 	color: #5473bb;
+	text-decoration: none;
 }
 
 .clearfix:before,
@@ -32,6 +33,7 @@ a {
 h1, h2, h3, h4 {
 	/*color: #5473bb;*/
     font-family: BankGothic LT BT, Arial, sans-serif;
+	text-align: center;
 }
 
 .h-list {
@@ -77,6 +79,17 @@ h1.logo-full {
 	max-width: 369px;
 }
 
+.hero-image {
+	width: 100%;
+}
+
+.hero-image img{
+	width: 100%;
+}
+
+.button {
+	text-align: center;
+}
 
 /***************************************************************************************************
 
@@ -118,17 +131,17 @@ nav ul li {
 	text-decoration: none;
 }
 
-/*
+
 #wrapper {
 	box-sizing: border-box;
+	width: 100%;
 	max-width: 1000px;
+	min-width: 300px;
     margin: 0 auto;
     padding: 0 20px;
-    width: 100%;
-    min-width: 300px;
     color: #FFFFFF; 
 }
-*/
+
 
 .wrapper-page {
 	
@@ -136,12 +149,9 @@ nav ul li {
 
 .wrapper-content {
 	box-sizing: border-box;
-	max-width: 1000px;
+	width: 100%;
 	margin: 0 auto;
-    padding: 0 20px;
-    width: 100%;
-    min-width: 300px;
-    color: #FFFFFF; /* #5473BB; */
+    
 }
 
 #nav-main ul {
@@ -232,6 +242,34 @@ nav ul li {
 	text-align: center;
 }
 
+.gallery {
+	background: rgba(0,0,0,0.5);
+}
+
+.display .nav {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+	background: rgba(255,255,255,0.14);
+}
+
+.display .nav .thumb img {
+	width: 100%;
+}
+
+.project {
+	width: 100%;
+	margin: 50px 0;
+}
+
+.separator {
+	clear: both;
+	width: 75%;
+	height: 2px;
+	margin: 0 auto;
+	background: #5473bb;
+}
+
 @media only screen and (min-width:326px) {
 
 	h1.logo-full {
@@ -310,14 +348,14 @@ nav ul li {
 		width: auto;
 	}
 	
-	.project {
-		width: 100%;
+	.work-type h2 {
+		text-align: center;
 	}
 	
+	
+	
 	.splash {
-		padding: 50px 0;
-		
-		
+		/*padding: 50px 0;*/
 	}
 	
 	.splash .hero-image {
@@ -330,8 +368,12 @@ nav ul li {
 		width: 45%;
 	}
 	
+	.splash .button.action, .gallery .button.action {
+		clear: both;
+	}
+	
 	.gallery {
-		padding: 50px 0;
+		padding: 50px 30px;
 	}
 	
 	.gallery .display {
@@ -343,6 +385,16 @@ nav ul li {
 		float: right;
 		width: 45%;
 	}
+	
+	.display .nav .thumb {
+		width: 50px;
+		padding-right: 10px;
+	}
+	
+	.display .nav .thumb:last-child {
+		padding-right: 0px;
+	}
+	
 	
 }
 
