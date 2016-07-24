@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -48,6 +48,52 @@
     </header>
 
     <div id="contact-info" class="wrapper-content clearfix">
+    	<h2>Contact Me</h2>
+    
+    	<section>
+        
+        </section>
+    
+		<section>
+        	<form method="post" enctype="multipart/form-data" action="php/sender.php">
+                
+    
+                <fieldset>
+                	<legend>Your Contact Details</legend>
+                    
+                    <p>
+                        <label for="grab_name">Name: </label>
+    
+                        <input name="grab_name" id="grab_name" type="text" placeholder="Name" /> 
+                    </p>
+    
+                    <p>
+                        <label for="grab_email">Email Address: </label>
+    
+                        <input name="grab_email" id="grab_email" type="text" placeholder="Email" />
+                    </p>
+    
+                    <p>
+                        <label for="grab_subject">Subject: </label>
+    
+                        <input name="grab_subject" id="grab_subject" type="text" placeholder="Subject" />
+                    </p>
+    
+                    <p>
+                        <label for="grab_text">Message: </label>
+    
+                        <textarea name="grab_text" id="grab_text" rows="2" cols="20" placeholder="Message"></textarea>
+                    </p>
+                </fieldset>
+    
+                <p>
+                    <input title="Send Message" name="grab_submit" id="grab_submit" type="submit"  value="Send" />
+    
+                    <input title="Clear and reset the form." name="grab_reset" id="grab_reset" type="reset" value="Clear" />
+                </p>
+            </form>
+  		</section>
+    	  
     </div>
 
     <footer class="page-footer clearfix">
