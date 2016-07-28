@@ -47,54 +47,51 @@
         </nav>
     </header>
 
-    <div id="contact-info" class="wrapper-content clearfix">
-    	<h2>Contact Me</h2>
-    
-    	<section>
+    <section id="contact-info" class="wrapper-content clearfix">
+		<h2 class="page-header">Contact Me</h2>
+            
+        <div class="contact-info left-when-big">
+        	<h3>Call Me</h3>
+            
+            <p>214.850.7330</p>
+        </div>
         
-        </section>
-    
-		<section>
+		<div class="contact-form wrapper-form right-when-big">
+        	<h3>Email Me</h3>
+            
         	<form method="post" enctype="multipart/form-data" action="php/sender.php">
+                <div class="wrapper-input">
+                    <label for="grab_name">Name: </label><br />
+
+                    <input name="grab_name" id="grab_name" type="text" placeholder="Name" /> 
+                </div>
+
+                <div class="wrapper-input">
+                    <label for="grab_email">Email Address: </label><br />
+
+                    <input name="grab_email" id="grab_email" type="text" placeholder="Email" />
+                </div>
+
+                <div class="wrapper-input">
+                    <label for="grab_subject">Subject: </label><br />
+
+                    <input name="grab_subject" id="grab_subject" type="text" placeholder="Subject" />
+                </div>
+
+                <div class="wrapper-input">
+                    <label for="grab_text">Message: </label><br />
+
+                    <textarea name="grab_text" id="grab_text" rows="2" cols="20" placeholder="Message"></textarea>
+                </div>
                 
-    
-                <fieldset>
-                	<legend>Your Contact Details</legend>
-                    
-                    <p>
-                        <label for="grab_name">Name: </label>
-    
-                        <input name="grab_name" id="grab_name" type="text" placeholder="Name" /> 
-                    </p>
-    
-                    <p>
-                        <label for="grab_email">Email Address: </label>
-    
-                        <input name="grab_email" id="grab_email" type="text" placeholder="Email" />
-                    </p>
-    
-                    <p>
-                        <label for="grab_subject">Subject: </label>
-    
-                        <input name="grab_subject" id="grab_subject" type="text" placeholder="Subject" />
-                    </p>
-    
-                    <p>
-                        <label for="grab_text">Message: </label>
-    
-                        <textarea name="grab_text" id="grab_text" rows="2" cols="20" placeholder="Message"></textarea>
-                    </p>
-                </fieldset>
-    
-                <p>
+                <div class="wrapper-input clearfix">
                     <input title="Send Message" name="grab_submit" id="grab_submit" type="submit"  value="Send" />
     
                     <input title="Clear and reset the form." name="grab_reset" id="grab_reset" type="reset" value="Clear" />
-                </p>
+                </div>
             </form>
-  		</section>
-    	  
-    </div>
+  		</div>
+    </section>
 
     <footer class="page-footer clearfix">
         <address>Data&nbsp;Loom&nbsp;Interactive,&nbsp;Copyright&copy; 2016&nbsp;Updated:&nbsp;7/03/2016</address>

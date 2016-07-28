@@ -91,6 +91,14 @@ h1.logo-full {
 	text-align: center;
 }
 
+.contact-info {
+	text-align: center;
+}
+	
+.contact-info p {
+	font-size: 1.2em;
+}
+
 /***************************************************************************************************
 
 ***************************************************************************************************/
@@ -153,6 +161,10 @@ nav ul li {
 	width: 100%;
 	margin: 0 auto;
     
+}
+
+.wrapper-input {
+	margin-bottom: 15px;
 }
 
 #nav-main ul {
@@ -273,6 +285,7 @@ nav ul li {
 
 input, textarea {
 	box-sizing: border-box;
+	width: 100%;
 	padding: 5px 10px;
 	
 	font-size: 1em;
@@ -285,12 +298,30 @@ input {
 	height: 30px;
 }
 
+input[type=submit], input[type=reset] {
+	width: 50%;
+}
+
+input[type=submit] {
+	float: left;
+	border-radius: 5px 0 0 5px;
+}
+
+input[type=reset] {
+	float: right;
+	border-radius: 0 5px 5px 0;
+}
+
 textarea {
 	
 }
 
 fieldset {
 	border: none;
+}
+
+.contact-info {
+	font-size:;
 }
 
 @media only screen and (min-width:326px) {
@@ -418,6 +449,28 @@ fieldset {
 		padding-right: 0px;
 	}
 	
+	.wrapper-form {
+		
+	}
 	
+	.right-when-big, .left-when-big {
+		width: 45%;
+	}
+	
+	.right-when-big {
+		float: right;
+	}
+	
+	.left-when-big {
+		float: left;
+	}
+	
+	.contact-info, .contact-form {
+		
+	}
+	
+	.contact-info {
+		
+	}
 }
 
