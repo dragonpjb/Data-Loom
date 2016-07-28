@@ -40,6 +40,10 @@ h1, h2, h3, h4 {
 	padding: 0;
 }
 
+.h-list div{
+	display: inline-block;
+}
+
 .h-list li, .h-list div.thumb {
 	display: inline-block;
 }
@@ -68,7 +72,7 @@ h1, h2, h3, h4 {
 }
 
 .logo-full {
-	background: url(../images/logo-full.png) center center;
+	background: url(../img/logo-full.png) center center;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	display: block;
@@ -99,6 +103,9 @@ h1.logo-full {
 	font-size: 1.2em;
 }
 
+.link-group {
+	width: 100%;
+}
 /***************************************************************************************************
 
 ***************************************************************************************************/
@@ -111,9 +118,9 @@ body {
 	line-height: 140%;
 	color: #FFFFFF;
 	font-size: 1em;
-	background: url("../images/escheresque_ste.png");
+	background: url("../img/escheresque_ste.png");
 	
-    /*background: url("../images/carbon-gradient-1.png") left top repeat-y, url("../images/carbon-pattern-1.png") left top;
+    /*background: url("../img/carbon-gradient-1.png") left top repeat-y, url("../img/carbon-pattern-1.png") left top;
     background-size: 100%, auto;*/
 }
 
